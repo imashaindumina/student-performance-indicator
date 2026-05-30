@@ -29,13 +29,3 @@ class CustomException(Exception):
         # Return the detailed error message when converted to string
         return self.error_message
 
-# Test block to verify if CustomException catches errors perfectly
-if __name__ == "__main__":
-    try:
-        # Forcing a ZeroDivisionError (1 divided by 0 is mathematically impossible)
-        a = 1 / 0
-    except Exception as e:
-        # Logging a message to show we hit the exception block
-        logging.info("Divide by Zero Error encountered")
-        # Raising our custom exception to print the exact file name and line number
-        raise CustomException(e, sys)

@@ -21,6 +21,3 @@ logging.basicConfig(
     level=logging.INFO,
 )
 
-# Test block to verify if logging execution operates cleanly
-if __name__ == "__main__":
-    logging.info("Logging has started successfully.")
